@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="http://pd.test.goago.cn/pikachu/index.css">
+    <script>
+        window.CURR_USER = {
+            empId: '11111111',
+            nickNameCn: '和珅',
+            lastName: '何文山',
+            loginName: 'wenshan.hews'
+        };
+        window.APP_CONFIG = {
+            "common": {},
+            "report": {
+                "kpi": [{"displayName":"UV(Retargeting)","format":"0,0","name":"retargeting_total_uv","remark":"UV","unit":""},{"displayName":"网站当tree有效询盘(Retargeting)","format":"0,0","name":"retargeting_tree_inquiry","remark":"网站有效询盘","unit":""},{"displayName":"财年流量表现(月日均)","format":"0,0","name":"cpa_total_uv","remark":"财年流量表现(月日均)","unit":""},{"displayName":"财年当tree询盘(月日均)","format":"0,0","name":"cpa_tree_inquiry","remark":"财年当tree 询盘(月日均)","unit":""},{"displayName":"财年流量整体表现(月日均)","format":"0,0","name":"seo_total_uv","remark":"财年流量整体表现(月日均)","unit":""},{"displayName":"财年SC_PC端流量表现(月日均)","format":"0,0","name":"seo_en_pc_uv","remark":"财年SC_PC端流量表现(月日均)","unit":""},{"displayName":"财年SC_WAP端流量表现(月日均)","format":"0,0","name":"seo_en_wap_uv","remark":"财年SC_WAP端流量表现(月日均)","unit":""},{"displayName":"财年多语言_PC端表现(月日均)","format":"0,0","name":"seo_multi_pc_uv","remark":"财年多语言_PC端表现(月日均)","unit":""},{"displayName":"财年多语言_WAP端表现(月日均)","format":"0,0","name":"seo_multi_wap_uv","remark":"财年多语言_WAP端表现(月日均)","unit":""}],
+                "metrics": [{"displayName":"数据时间","format":"","name":"dataTime","remark":"","unit":""},{"displayName":"uv","format":"0,0","name":"uv","remark":"unique visitors","unit":"次"},{"displayName":"pv","format":"0,0","name":"pv","remark":"page views","unit":"次"},{"displayName":"clicks","format":"0,0","name":"clicks","remark":"list页面主搜，右侧以及下方的所有点击","unit":"次"},{"displayName":"m-tree","format":"0,0","name":"m_tree","remark":"tree总数","unit":"个"},{"displayName":"sar","format":"0,0.00","name":"sar","remark":"跳失率","unit":"%"},{"displayName":"mc_fb","format":"0,0","name":"mc_fb","remark":"网站有效询盘","unit":"个"},{"displayName":"联盟日结询盘","format":"0,0","name":"mc_daily_fb","remark":"联盟日结询盘","unit":"个"},{"displayName":"CVR","format":"0,0.00","name":"mc_fb_cvr","remark":"UV/网站有效询盘","unit":"%"},{"displayName":"日结询盘转化率","format":"0,0.00","name":"mc_daily_fb_cvr","remark":"UV/联盟日结询盘","unit":"%"},{"displayName":"日结询盘通过占比","format":"0,0.00","name":"mc_daily_fb_ratio","remark":"日结询盘通过占比","unit":"%"},{"displayName":"P4P财务点击","format":"0,0","name":"p4p_financial_click","remark":"P4P财务点击","unit":"次"},{"displayName":"P4P消耗","format":"0,0.00","name":"p4p_financial_cost","remark":"P4P消耗","unit":"元"},{"displayName":"P4P有效询盘","format":"0,0","name":"p4p_mc_fb","remark":"P4P有效询盘","unit":"个"},{"displayName":"P4P点击占比","format":"0,0.00","name":"p4p_click_ratio","remark":"P4P点击占比","unit":"%"},{"displayName":"P4P询盘占比","format":"0,0.00","name":"p4p_mc_fb_ratio","remark":"P4P询盘占比","unit":"%"},{"displayName":"ROI","format":"0,0.00","name":"roi","remark":"付费渠道投入产出比","unit":"%"},{"displayName":"epc","format":"0,0.0000","name":"epc","remark":"预计支付佣金/m-tree","unit":"美元"},{"displayName":"Active Buyers","format":"0,0","name":"activity_buyer","remark":"活跃买家数","unit":""},{"displayName":"cost/mc","format":"0,0.00","name":"cpf","remark":"广告花费/有效询盘","unit":"美元"},{"displayName":"cost/uv","format":"0,0.00","name":"cpu","remark":"广告花费/UV","unit":"美元"},{"displayName":"cost/ab","format":"0,0.00","name":"cpab","remark":"广告花费/活跃买家数","unit":"美元"},{"displayName":"cost/mc","format":"0,0.00","name":"cpf","remark":"广告花费/有效询盘","unit":"美元"},{"displayName":"Cost","format":"0,0.00","name":"cost","remark":"广告花费","unit":"美元"},{"displayName":"预计支付佣金","format":"0,0.00","name":"pre_cost","remark":"预计支付佣金","unit":"美元"},{"displayName":"TA Orders(免费+付费渠道)","format":"0,0","name":"ta_orders","remark":"日均信保订单","unit":"单"},{"displayName":"P4P Revenue","format":"0,0.00","name":"p4p_revenue","remark":"付费渠道：P4P收入","unit":"元"},{"displayName":"p4p_rpf","format":"0,0.00","name":"p4p_rpf","remark":"p4p 收入/p4p 有效询盘","unit":"元"},{"displayName":"RFQ","format":"0,0","name":"rfq","remark":"日均RFQ","unit":""},{"displayName":"CVR","format":"0,0.00","name":"cvr","remark":"UV/网站有效询盘","unit":"%"}],
+                "metricsMap": [{"name":"uv,联盟海外UV,UV,海外UV,海外有效UV,OS UV","format":"0,0","remark":"unique visitors","unit":"次"},{"name":"pv,联盟海外PV,PV,海外PV,海外有效UV,OS PV","format":"0,0","remark":"unique visitors","unit":"次"},{"name":"网站有效询盘,海外网站MC有效询盘数,MC反馈,MC Inquiry","format":"0,0","remark":"unique visitors","unit":"个"},{"name":"网站有效询盘转化率,海外网站有效询盘转化率,网站MC有效询盘转化率,Conversion Rate,询盘转化率(MC/OS UV)","format":"0,0.00","remark":"unique visitors","unit":"%","mutil":"100"},{"name":"ROI,海外ROI","format":"0,0.00","remark":"unique visitors","unit":"%"},{"name":"Cost","format":"0,0","remark":"unique visitors","unit":"美元"},{"name":"RPF","format":"0,0","remark":"unique visitors","unit":"元"},{"name":"P4P消耗,P4P财务花费,P4P财务消耗金额(元),海外P4P财务花费,消耗（RMB）,P4P Revenue","format":"0,0.00","remark":"unique visitors","unit":"元"},{"name":"P4P广义询盘","format":"0,0","remark":"unique visitors","unit":"个"},{"name":"站外cost","format":"0,0.00","remark":"unique visitors","unit":"美元"},{"name":"AB,海外AB,OS AB","format":"0,0","remark":"unique visitors","unit":"个"},{"name":"海外P4P_RPF","format":"0,0.00","remark":"unique visitors","unit":"美元"},{"name":"p4p_rpf,P4P rpf(元)","format":"0,0.00","remark":"unique visitors","unit":"元"},{"name":"CPF(元)","format":"0,0.00","remark":"unique visitors","unit":"元"},{"name":"CPF","format":"0,0.00","remark":"unique visitors","unit":"美元"},{"name":"EPU","format":"0,0.00","remark":"unique visitors","unit":"美元/次"},{"name":"预计支付佣金(美元)/联盟海外UV,海外预估花费佣金金额/海外UV,站外花费（美元）/UV,站外花费（美元）/UV,Cost/海外有效UV","format":"0,0.0000","remark":"unique visitors","unit":""},{"name":"cost/ab,预计支付佣金(美元)/网站有效询盘,预计支付佣金(美元)/海外AB,海外预估花费佣金金额/海外网站MC有效询盘数,海外预估花费佣金金额/海外AB,站外花费（美元）/海外AB,站外花费（美元）/网站MC有效询盘数,站外花费（美元）/海外AB,Cost/MC反馈,Cost/AB","format":"0,0.00","remark":"unique visitors","unit":""},
+                    {"name":"MC反馈/海外有效UV,MC Inquiry/OS UV,网站MC有效询盘数/UV,海外网站MC有效询盘数/海外UV,网站有效询盘/联盟海外UV","format":"0,0.00","remark":"unique visitors","unit":"%"}],
+                "paidFilters": {
+                    "Affiliate": {
+                        "metrics": ["uv", "pv","clicks","m_tree","sar", "mc_fb","mc_daily_fb","mc_fb_cvr","mc_daily_fb_cvr","mc_daily_fb_ratio","p4p_financial_click","p4p_financial_cost","p4p_mc_fb","p4p_click_ratio","p4p_mc_fb_ratio","p4p_rpf","roi","epc","pre_cost","activity_buyer","cpf"],
+                        "tree":{
+                            "当Tree": "当Tree",
+                            "total": "total"
+                        },
+                        "siteType": {
+                            "二级联盟": "二级联盟",
+                            "小站长": "小站长"
+                        },
+                        "cookie": {
+                            "All": "All",
+                            "New": "New",
+                            "Old": "Old"
+                        },
+                        "device": {
+                            "All": "All",
+                            "PC": "PC",
+                            "Wap": "Wap"
+                        }
+                    },
+                    "Display": {
+                        "metrics": ["uv","pv","mc_fb","mc_fb_cvr","p4p_financial_cost","p4p_mc_fb","p4p_rpf","roi","cost","activity_buyer","cpf"],
+                        "tree":{
+                            "当Tree": "当Tree",
+                            "total": "total"
+                        },
+                        "cookie": {
+                            "All": "All"
+                        },
+                        "device": {
+                            "All": "All"
+                        },
+                        "platform":{
+                            "dbm":"dbm",
+                            "facebook":"facebook",
+                            "criteo":"criteo"
+                        },
+                        "mode":{
+                        }
+                    },
+                    "SEM": {
+                        "metrics": ["uv","pv","mc_fb","mc_fb_cvr","p4p_financial_cost","p4p_mc_fb","p4p_rpf","roi","cost","activity_buyer","cpf"],
+                        "tree":{
+                            "当session": "当session"
+                        },
+                        "cookie": {
+                            "All": "All"
+                        },
+                        "device": {
+                            "All": "All"
+                        }
+                    }
+                },
+                "freeFilters": {
+                    "SEO": {
+                        "metrics": ["uv","pv","mc_fb","mc_fb_cvr","p4p_financial_cost"],
+                        "tree": {
+                            "当session": "当session"
+                        },
+                        "cookie": {
+                            "All": "All"
+                        },
+                        "device": {
+                            "All": "All",
+                            "PC": "PC",
+                            "Wap": "Wap"
+                        }
+                    },
+                },
+                "siteMetrics": ["uv", "pv", "MC_FB", "CVR","ROI", "AB", "TA_ORDERS",  "RFQ", "P4P_revenue","TA_ORDERS"]
+            },
+            "plan": {},
+            "pages": {},
+            "offer": {
+                "creativeMng":{
+                    "comboList":{
+                        "sites":[{"children":[{"children":[{"children":[],"label":"全部","value":""}],"label":"全部","value":""}],"label":"全部","value":""},{"children":[{"children":[{"children":[],"label":"通用","value":"0"}],"label":"通用","value":"0"}],"label":"通用","value":"0"},{"children":[{"children":[{"children":[],"label":"-","value":"a371f"}],"label":"-","value":"7767702"},{"children":[{"children":[],"label":"-","value":"a370u"}],"label":"-","value":"7860928"}],"label":"-","value":"a2700"}],
+                        "levels":[{"label":"全部","value":""},{"label":"一级类目","value":"1"},{"label":"二级类目","value":"2"},{"label":"三级类目","value":"3"},{"label":"四级类目","value":"4"}]
+                    }
+                }
+            },
+            "audience": {}
+        };
+    </script>
+</head>
+<body>
+<div id="react-content"></div>
+<script src="http://pd.test.goago.cn/pikachu/common.js"></script>
+<script src="http://pd.test.goago.cn/pikachu/index.js"></script>
+</body>
+</html>
+
